@@ -37,11 +37,6 @@ p {
   margin: 0;
   padding: 0;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 .container {
   margin: 0 auto;
@@ -263,6 +258,7 @@ body {
   transition: transform 250 ms;
 
   background: var(--wite-color);
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -704,8 +700,6 @@ body {
   background-color: var(--accent-color);
 }
 .subscribe {
-  display: flex;
-  align-self: flex-end;
   margin-left: 93px;
 }
 .subscribe h2 {
@@ -718,15 +712,25 @@ body {
   color: var(--wite-color);
   margin-bottom: 20px;
 }
+
 .subscribe input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+
+  background-color: var(--hero-footer-color);
+  color: var(--footer-contacts-color);
+  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding: 9px;
+  padding: 14px;
 }
 .subscribe button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-style: normal;
   font-weight: 700;
