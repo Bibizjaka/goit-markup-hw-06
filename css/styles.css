@@ -297,6 +297,7 @@ body {
   color: var(--main-text-color);
   margin-bottom: 10px;
 }
+
 .form-icon {
   width: 18px;
   height: 18px;
@@ -305,14 +306,16 @@ body {
   left: 12px;
   transform: translateY(-50%);
 }
+input {
+  padding-left: 47px;
+}
 
-input:focus ~ .form-icon {
+input:focus + .form-icon {
   fill: var(--accent-color);
 }
 input:focus,
 textarea:focus {
   outline-color: var(--accent-color);
-  padding-left: 42px;
 }
 .form b {
   font-style: normal;
