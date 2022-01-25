@@ -68,7 +68,6 @@ body {
 .container .list {
   list-style: none;
   padding-left: 0;
-  margin: 0;
 }
 
 .link,
@@ -254,6 +253,7 @@ body {
   max-height: 581px;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250 ms;
 
@@ -282,7 +282,6 @@ body {
   fill: var(--accent-color);
 }
 .form {
-  padding: 40px;
   text-align: left;
 }
 .form-field,
@@ -333,6 +332,7 @@ textarea:focus {
   outline-color: var(--accent-color);
 }
 .form b {
+  display: inline-block;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -564,9 +564,12 @@ a {
   margin-bottom: 10px;
   margin-top: 0;
 }
-.team-photo {
-  margin-bottom: 30px;
+.employee-info {
+  padding: 30px;
 }
+/* .team-photo {
+  padding-bottom: 30px;
+} */
 .employee-position {
   font-size: 16px;
   line-height: 1.2;
@@ -593,11 +596,7 @@ a {
   padding-bottom: 30px;
   justify-content: center;
 }
-.social-links-list {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-}
+
 .link-item {
   display: flex;
   justify-content: center;
@@ -628,7 +627,7 @@ a {
 }
 /* Clients */
 .our-clients {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
@@ -768,7 +767,7 @@ a {
   background-color: var(--accent-color);
 }
 .subscribe {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .subscribe h2 {
   font-style: normal;
@@ -788,6 +787,8 @@ a {
   line-height: 20px;
   letter-spacing: 0.03em;
 
+  outline: none;
+
   background-color: var(--hero-footer-color);
   color: var(--footer-contacts-color);
   width: 358px;
@@ -799,7 +800,7 @@ a {
   transition: outline-color 250ms var(--animation-style);
 }
 .subscribe input:focus {
-  outline-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .subscribe button {
   display: inline-flex;
@@ -833,10 +834,11 @@ a {
 .list-buttons {
   justify-content: center;
   margin-right: 8px;
-}
-.buttons {
   margin-bottom: 50px;
 }
+/* .buttons {
+  margin-bottom: 50px;
+} */
 
 .portfolio-button {
   background: var(--team-background-color);
